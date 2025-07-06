@@ -12,6 +12,7 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
+    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -199,6 +200,9 @@
   }
   .bg-red-700 {
     background-color: var(--color-red-700);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .underline {
     text-decoration-line: underline;
