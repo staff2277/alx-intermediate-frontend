@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+        <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+    <section
+      class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-5"
+    >
+      <div class=""><img src="./images/1.jpg" alt="image1" /></div>
+      <div class=""><img src="./images/2.jpg" alt="image2" /></div>
+      <div class=""><img src="./images/3.jpg" alt="image3" /></div>
+      <div class=""><img src="./images/4.jpg" alt="image4" /></div>
+      <div class=""><img src="./images/5.jpg" alt="image5" /></div>
+      <div class=""><img src="./images/6.jpg" alt="image6" /></div>
+      <div class=""><img src="./images/7.jpg" alt="image7" /></div>
+      <div class=""><img src="./images/8.jpg" alt="image8" /></div>
+      <div class=""><img src="./images/9.jpg" alt="image9" /></div>
+      <div class=""><img src="./images/10.jpg" alt="image10" /></div>
+      <div class=""><img src="./images/11.jpg" alt="image11" /></div>
+      <div class=""><img src="./images/12.jpg" alt="image12" /></div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+  </body>
+</html>
